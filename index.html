@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/Mer.ce/ Store - Butik Fashion Eksklusif di Bogor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">/Mer.ce/</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk">Koleksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lokasi">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark position-relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">/Mer.ce/ Store</h1>
+            <p class="hero-subtitle">Butik fashion eksklusif di Bogor dengan koleksi terbaik untuk penampilan elegan Anda</p>
+            <a href="#produk" class="btn btn-boutique btn-lg">Lihat Koleksi</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="container mb-5" id="produk">
+        <h2 class="text-center section-title">Koleksi Eksklusif</h2>
+        <p class="text-center mb-5">Temukan pilihan terbaik dari butik fashion kami di Bogor</p>
+        
+        <div class="text-center mb-4">
+            <button class="btn category-btn active-category" data-category="all">Semua</button>
+            <button class="btn category-btn" data-category="dress">Dress</button>
+            <button class="btn category-btn" data-category="blouse">Blouse</button>
+            <button class="btn category-btn" data-category="kebaya">Kebaya</button>
+            <button class="btn category-btn" data-category="batik">Batik</button>
+            <button class="btn category-btn" data-category="aksesoris">Aksesoris</button>
+        </div>
+        
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="dress">
+                <div class="card product-card h-100">
+                    <span class="badge badge-exclusive">Eksklusif</span>
+                    <img src="foto/Rossie Outer Dress.jpg" class="card-img-top product-img" alt="Dress Etnik">
+                    <div class="card-body">
+                        <h5 class="product-title">Rossie Outer Dress</h5>
+                        <p class="product-description">Dress dengan motif etnik modern, bahan katun premium dengan jahitan tangan berkualitas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 899.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="blouse">
+                <div class="card product-card h-100">
+                    <span class="badge badge-exclusive">Limited</span>
+                    <img src="foto/Blouse Premium.jpg" class="card-img-top product-img" alt="Blouse Sutra">
+                    <div class="card-body">
+                        <h5 class="product-title">Celia Blouse Premium</h5>
+                        <p class="product-description">Blouse wanita dari sutra alam dengan potongan modern dan detail jahitan eksklusif.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 1.299.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="kebaya">
+                <div class="card product-card h-100">
+                    <img src="foto/KebayaWanita.png" class="card-img-top product-img" alt="Kebaya Modern">
+                    <div class="card-body">
+                        <h5 class="product-title">Kebaya Modern</h5>
+                        <p class="product-description">Kami menghadirkan kebaya modern dengan kancing depan tiruan dan dapat dikenakan dengan dalaman berwarna apa pun untuk berbagai acara.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 2.499.000</span>
+                                <span class="old-price">Rp 2.999.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="batik">
+                <div class="card product-card h-100">
+                    <span class="badge badge-exclusive">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top product-img" alt="Setelan Batik">
+                    <div class="card-body">
+                        <h5 class="product-title">Setelan Batik Tulis</h5>
+                        <p class="product-description">Setelan batik tulis premium dengan motif eksklusif, cocok untuk acara formal.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 3.499.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="dress">
+                <div class="card product-card h-100">
+                    <img src="foto/DressWanita.png" class="card-img-top product-img" alt="Dress Malam">
+                    <div class="card-body">
+                        <h5 class="product-title">Dress Wanita Elegan</h5>
+                        <p class="product-description">Dress panjang yang dibuat dengan bahan yang premium, cocok untuk bersantai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 1.899.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="aksesoris">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top product-img" alt="Kalung Etnik">
+                    <div class="card-body">
+                        <h5 class="product-title">Dasi Kerja Set</h5>
+                        <p class="product-description">Dasi dari perak sterling dengan motif tradisional Indonesia.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 599.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="blouse">
+                <div class="card product-card h-100">
+                    <span class="badge badge-exclusive">New</span>
+                    <img src="foto/Sea Blouse.webp" class="card-img-top product-img" alt="Blouse Lace">
+                    <div class="card-body">
+                        <h5 class="product-title">Sea Blouse Premium</h5>
+                        <p class="product-description">Blouse ini memiliki potongan yang anggun dan sederhana, Blus Sae sangat cocok untuk acara kasual maupun formal.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 1.599.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="col-md-4 col-lg-3 mb-4 product-item" data-category="kebaya">
+                <div class="card product-card h-100">
+                    <img src="foto/Kebaya Encim.jpeg" class="card-img-top product-img" alt="Kebaya Encim">
+                    <div class="card-body">
+                        <h5 class="product-title">Kebaya Encim Modern</h5>
+                        <p class="product-description">Kebaya dengan sentuhan modern dari bahan sutra dengan detail bordir tangan.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">Rp 2.199.000</span>
+                                <span class="old-price">Rp 2.499.000</span>
+                            </div>
+                            <button class="btn btn-boutique btn-sm"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-boutique">Lihat Semua Koleksi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="foto/Sea Blouse.webp" alt="Tentang /Mer.ce/" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Tentang /Mer.ce/ Store</h2>
+                    <p>/Mer.ce/ Store adalah butik fashion eksklusif yang berlokasi di jantung kota Bogor. Kami menawarkan koleksi pilihan dengan desain unik dan kualitas premium untuk pelanggan yang menghargai keindahan dan keunikan dalam berbusana.</p>
+                    <p>Dengan fokus pada karya lokal dan bahan-bahan terbaik, setiap produk kami dibuat dengan perhatian terhadap detail dan keunggulan kualitas. Kami bangga menjadi bagian dari perkembangan fashion Indonesia yang berkelas dunia.</p>
+                    <p>Kunjungi butik kami di Jl. Dreded No.1, Empang, Bogor Selatan untuk pengalaman berbelanja yang personal dan eksklusif.</p>
+                    <a href="#lokasi" class="btn btn-boutique mt-3">Lihat Lokasi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mb-5" id="testimoni">
+        <h2 class="text-center section-title">Apa Kata Pelanggan Kami</h2>
+        <p class="text-center mb-5">Testimoni dari pelanggan setia /Mer.ce/ Store</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="text-center">
+                        <img src="foto/Profil/Deddy Corbisier.jpg" class="testimonial-img" alt="Testimoni 1">
+                        <h5>Deddy Corbuzier</h5>
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Kebaya yang saya beli di /Mer.ce/ Store benar-benar istimewa. Kualitas jahitan dan bahan sangat premium. Pelayanan juga sangat personal dan profesional."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="text-center">
+                        <img src="foto/Profil/jefri nicholaasa.png" class="testimonial-img" alt="Testimoni 2">
+                        <h5>Jefri Nichol</h5>
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Dasi hitam yang bermotif tradisional indonesia sangat amat bagus dan saya suka bergaya."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="text-center">
+                        <img src="foto/Profil/ivan Gunawang.png" class="testimonial-img" alt="Testimoni 3">
+                        <h5>Ivan Gunawan</h5>
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Sebagai desainer, saya sangat menghargai kualitas dan keunikan produk di /Mer.ce/. Mereka benar-benar memahami fashion yang berkelas dengan sentuhan lokal."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Location -->
+    <section class="container mb-5" id="lokasi">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="store-location h-100">
+                    <h2 class="section-title">Lokasi Butik Kami</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jl. Dreded No.1, Empang, Kec. Bogor Sel., Kota Bogor, Jawa Barat 16132</p>
+                    
+                    <div class="opening-hours">
+                        <h5><i class="fas fa-clock"></i> <strong>Jam Operasional:</strong></h5>
+                        <ul class="list-unstyled">
+                            <li><span>Senin - Kamis</span> <span>10:00 - 21:00</span></li>
+                            <li><span>Jumat</span> <span>10:00 - 20:30</span></li>
+                            <li><span>Sabtu</span> <span>09:30 - 21:00</span></li>
+                            <li><span>Minggu</span> <span>10:00 - 20:00</span></li>
+                        </ul>
+                    </div>
+                    
+                    <p class="mt-3"><i class="fas fa-phone"></i> <strong>Telepon/WA:</strong> 0813-8865-0352</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hello@mercestore.com</p>
+                    
+                    <h5 class="mt-4">Kenapa Berkunjung ke Butik Kami?</h5>
+                    <ul>
+                        <li>Pengalaman berbelanja personal dengan stylist profesional</li>
+                        <li>Koleksi eksklusif yang tidak tersedia online</li>
+                        <li>Fitting langsung dengan produk-produk premium</li>
+                        <li>Konsultasi gaya gratis dari tim ahli kami</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ratio ratio-16x9 h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0631797524982!2d106.79466866963629!3d-6.623259899736188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e3fe2b89ef%3A0x3e47f614ef857a86!2sMERCE%20BUTIK!5e0!3m2!1sid!2sid!4v1716272250000!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="container-fluid py-5" style="background-color: var(--primary-color); color: white;">
+        <div class="container text-center">
+            <h2 class="mb-3">Bergabunglah dengan Komunitas /Mer.ce/</h2>
+            <p class="lead mb-4">Dapatkan update koleksi terbaru, promo eksklusif, dan undangan event khusus</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Masukkan email Anda" required>
+                        <button class="btn btn-dark" type="submit">Berlangganan</button>
+                    </form>
+                    <small>Kami menghargai privasi Anda. Email tidak akan dibagikan ke pihak lain.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">/Mer.ce/ Store</h5>
+                    <p>Butik fashion eksklusif di Bogor dengan koleksi terbaik untuk penampilan elegan Anda.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Belanja</h5>
+                    <div class="footer-links">
+                        <a href="#">Koleksi Baru</a>
+                        <a href="#">Best Seller</a>
+                        <a href="#">Promo Spesial</a>
+                        <a href="#">Pre-Order</a>
+                        <a href="#">Katalog</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Informasi</h5>
+                    <div class="footer-links">
+                        <a href="#">Tentang Kami</a>
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Pengiriman</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Hubungi Kami</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Dreded No. 123, Bogor</p>
+                        <p><i class="fas fa-phone"></i> (0251) 8345-6789</p>
+                        <p><i class="fas fa-envelope"></i> hello@mercestore.com</p>
+                        <p><i class="fas fa-clock"></i> Buka setiap hari 10:00 - 20:00 WIB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 /Mer.ce/ Store. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <img src="https://via.placeholder.com/300x50?text=BCA+Mandiri+Visa+Mastercard" alt="Payment Methods" class="img-fluid" style="max-height: 30px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Filter produk berdasarkan kategori
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Hapus active class dari semua button
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active-category');
+                });
+                
+                // Tambahkan active class ke button yang diklik
+                this.classList.add('active-category');
+                
+                const category = this.getAttribute('data-category');
+                const products = document.querySelectorAll('.product-item');
+                
+                products.forEach(product => {
+                    if (category === 'all' || product.getAttribute('data-category').includes(category)) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animasi scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
